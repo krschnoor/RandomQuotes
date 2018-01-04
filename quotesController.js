@@ -1,8 +1,9 @@
 var MongoClient = require('mongodb').MongoClient;
+var mongoDB = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/';
 
 exports.getQuote = function(req,res){
  
- MongoClient.connect("mongodb://127.0.0.1:27017/" , function(err,db){
+ MongoClient.connect(mongoDB , function(err,db){
  
  var mydb = db.db("FamousQuotes");
 
