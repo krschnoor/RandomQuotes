@@ -3,5 +3,5 @@ module.exports = function(app){
 var quotes = require('./quotesController.js')
 
 app.get('/quotes',quotes.getQuote);
-
+app.get('/',quotes.getQuote);
 }
