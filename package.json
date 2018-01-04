@@ -2,7 +2,7 @@
   "name": "randomquotes",
   "version": "1.0.0",
   "description": "Famous Random Quotes",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "start"
   },
@@ -11,11 +11,15 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
+    "engines": {
+      "node": "8.6.0"
+    },
     "express": "^4.16.2",
     "helmet": "^3.9.0",
     "mongo-client": "^0.2.1",
-    "engines": {
-    "node": "8.6.0"
-    }
+    "mongodb": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.7"
   }
 }
